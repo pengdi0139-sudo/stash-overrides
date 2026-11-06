@@ -1,0 +1,10 @@
+name: YouTube广告域名拦截
+desc: 只拦截 Google 广告/追踪域名，不改任何代理组；不含 googlevideo.com 与 youtube.com，不影响正片播放
+rules: #!insert
+  - DOMAIN-SUFFIX,doubleclick.net,REJECT
+  - DOMAIN-SUFFIX,googlesyndication.com,REJECT
+  - DOMAIN-SUFFIX,googleadservices.com,REJECT
+  - DOMAIN-SUFFIX,google-analytics.com,REJECT
+  - DOMAIN-SUFFIX,adservice.google.com,REJECT
+  - DOMAIN-SUFFIX,adsense.com,REJECT
+  - DOMAIN-SUFFIX,googletagservices.com,REJECT
